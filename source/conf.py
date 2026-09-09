@@ -17,8 +17,8 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'image_and_video_encoding'
-copyright = '2023, llhuang'
+project = 'digital_image_and_video_processing_chips'
+copyright = '2026, llhuang'
 author = 'llhuang'
 
 
