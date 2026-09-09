@@ -17,8 +17,8 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'xkcdc_rtl'
-copyright = '2022, llhuang'
+project = 'image_and_video_encoding'
+copyright = '2023, llhuang'
 author = 'llhuang'
 
 
@@ -57,7 +57,7 @@ exclude_patterns = []
 html_theme = 'classic'
 html_theme_options = {
     "stickysidebar"     : "true",
-    "sidebarwidth"      : "260",
+    "sidebarwidth"      : "280",
     "collapsiblesidebar": "false",
     "body_min_width"    : 0,
     "body_max_width"    : "none",

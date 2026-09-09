@@ -3,12 +3,12 @@
    ..  Filename       : index.rst
    ..  Author         : Huang Leilei
    ..  Status         : phase 000
-   ..  Reconstructed  : 2022-10-01
-   ..  Description    : description about regsiter
+   ..  Created        : 2023-03-02
+   ..  Description    : description about 第00讲 - 课程简介
    ..
 .. -----------------------------------------------------------------------------
 
-第00讲 - 基本概念
+第00讲 - 课程简介
 --------------------------------------------------------------------------------
 
 .. image:: 幻灯片1.PNG
