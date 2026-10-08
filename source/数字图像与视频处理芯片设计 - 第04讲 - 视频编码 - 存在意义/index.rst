@@ -3,8 +3,8 @@
    ..  Filename       : index.rst
    ..  Author         : Huang Leilei
    ..  Status         : phase 000
-   ..  Created        : 2023-04-13
-   ..  Description    : description about 第04讲 - 视频编码之存在意义
+   ..  Created        : 2026-09-17
+   ..  Description    : description about 第04讲 - 视频编码 - 存在意义
    ..
 .. -----------------------------------------------------------------------------
 
