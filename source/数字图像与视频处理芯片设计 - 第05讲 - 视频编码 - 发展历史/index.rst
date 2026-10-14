@@ -88,6 +88,12 @@ ITU-T & JVT
 .. image:: 幻灯片60.JPG
 .. image:: 幻灯片61.JPG
 .. image:: 幻灯片62.JPG
+
+**微实验A**
+........................................
 .. image:: 幻灯片63.JPG
 .. image:: 幻灯片64.JPG
+
+**参考实现与测试数据**：:download:`微实验A.zip <微实验A.zip>`
+
 .. image:: 幻灯片65.JPG
