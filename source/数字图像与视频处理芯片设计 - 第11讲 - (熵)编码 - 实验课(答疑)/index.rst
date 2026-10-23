@@ -14,4 +14,7 @@
 .. image:: 幻灯片1.JPG
 .. image:: 幻灯片2.JPG
 .. image:: 幻灯片3.JPG
+
+**参考实现与测试数据**：:download:`主实验A.zip <主实验A.zip>`。
+
 .. image:: 幻灯片4.JPG
