@@ -1,0 +1,46 @@
+domain,name,level,size,key,type,min,max,precision,default,description
+virtual,strFileCfg,rough,/,c,/,/,/,/,/,full location of the configuration file
+virtual,help,rough,/,/,/,/,/,/,/,to print help information
+virtual,show,rough,/,/,/,/,/,/,/,to show configurations
+virtual,dryRun,rough,/,/,/,/,/,/,/,to check configurations without actual running
+changeable,idxFrame,detailed,1,/,int,/,/,/,/,index of the current frame
+changeable,idxMcuX,detailed,1,/,int,/,/,/,/,index of the current MCU in X (horizontal) direction
+changeable,idxMcuY,detailed,1,/,int,/,/,/,/,index of the current MCU in Y (vertical) direction
+changeable,idxMcuR,detailed,1,/,int,/,/,/,/,index of the current MCU in Y (scaler) direction
+changeable,trueSizMcuX,detailed,1,/,int,/,/,/,/,true size of the current MCU in X (horizontal) direction
+changeable,trueSizMcuY,detailed,1,/,int,/,/,/,/,true size of the current MCU in Y (vertical) direction
+changeable,idxBsCfg,detailed,1,/,int,/,/,/,/,read index pointer of full bitstream
+top,strFileInp,rough,1,i,string,/,/,/,xkjpg.yuv,full location of the input file
+top,strFileOut,rough,1,o,string,/,/,/,xkjpg,full location of the output file
+top,strPrefixDump,rough,1,d,string,/,/,/,/,dump prefix
+top,strPrefixLoad,detailed,1,l,string,/,/,/,/,load prefixon)
+top,flgDumpCsv,rough,1,/,bool,/,/,/,1,enable flag for the dump of csv-format log
+top,flgDumpYuvRec,rough,1,/,bool,/,/,/,1,enable flag for the dump of reconstructed YUV
+top,flgDumpDbg,rough,1,/,bool,/,/,/,0,enable flag for the dump of debug information
+top,flgDistortion,rough,2,/,bool,/,/,/,1 0,enable flag for the distortion calculation (<index> 0/1: PSNR/MS-SSIM)
+top,numFrame,rough,1,f,int,1,/,/,10,number of frames to be processed
+top,numChn,detailed,1,/,int,1,3,/,3,number of channels (Y/U/V)
+top,idxFrameBgn,rough,1,/,int,0,/,/,0,index of the first frame to be processed
+top,sizFrameX,rough,1,w,int,32,16384,/,416,size of frames in X (horizontal) direction
+top,sizFrameY,rough,1,h,int,32,16384,/,240,size of frames in Y (vertical) direction
+top,sizMcu,detailed,1,/,int,16,16,/,16,size of the MCU
+top,enmModRun,rough,1,/,int,0,1,/,0,enumerator for the running mode (0: encode; 1: decode)
+top,enmFormat,rough,1,/,int,0,1,/,0,enumerator for color format (0: YUV420; 1: YUV422)
+top,enmProc,rough,1,e,int,0,1,/,0,enumerator for the processing behavior (<value> 0: software 1: hardware)
+top,enmInfo,detailed,1,v,int,0,5,/,1,enumerator for the information level (<value> 0: none 1: top 2: kernel 3: unit 4: common)
+top,enmDump,detailed,1,/,int,0,2,/,0,enumerator for data dumping (<value> 0: none 1: inout 2: intermediate)
+descreteCosineTransform,dctFlgProc,detailed,1,/,bool,/,/,/,1,enable flag for processing
+descreteCosineTransform,dctEnmLoad,detailed,1,/,int,0,2,/,0,enumerator for load source (<value> 0: pipeline; 2: file; 3: random)
+descreteCosineTransform,dctEnmDump,detailed,1,/,int,0,2,/,0,enumerator for data dump (<value> 0: none 1: inout 2: intermediate)
+huffmanEncoding,h_cFlgProc,detailed,1,/,bool,/,/,/,1,enable flag for processing
+huffmanEncoding,h_cEnmLoad,detailed,1,/,int,0,2,/,0,enumerator for load source (<value> 0: pipeline; 2: file; 3: random)
+huffmanEncoding,h_cEnmDump,detailed,1,/,int,0,2,/,0,enumerator for data dump (<value> 0: none 1: inout 2: intermediate)
+interface,itfFlgProc,detailed,1,/,bool,/,/,/,1,enable flag for processing
+interface,itfEnmLoad,detailed,1,/,int,0,2,/,0,enumerator for load source (<value> 0: pipeline; 2: file; 3: random)
+interface,itfEnmDump,detailed,1,/,int,0,2,/,0,enumerator for data dump (<value> 0: none 1: inout 2: intermediate)
+derived,numMcuX,detailed,1,/,int,/,/,/,/,number of MCUs in X (horizontal) direction of one frame
+derived,numMcuY,detailed,1,/,int,/,/,/,/,number of MCUs in Y (vertical) direction of one frame
+derived,numMcuR,detailed,1,/,int,/,/,/,/,number of MCUs in Y (scaler) direction of one frame
+derived,numLaC,detailed,1,/,int,/,/,/,/,number of channels (luma/chroma)
+derived,trueSizFrameX,detailed,1,w,int,32,16384,/,416,true size of frames in X (horizontal) direction
+derived,trueSizFrameY,detailed,1,h,int,32,16384,/,240,true size of frames in Y (vertical) direction
